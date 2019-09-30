@@ -4,13 +4,57 @@
 	box-sizing:border-box;
 }
 body{
+	background:red;
 	text-align:center;
+}
+.menuhamburguer{
+	font-size:40px;
+	display:none;
+}
+#hamburguer{
+	display:none;
 }
 .img{
 	width:250px;
 	height:200px;
 	margin:5px;
 }
-p{
+.p__image{
 	font-size:20px;
+}
+li{
+  list-style:none;
+}
+a{
+	display:inline-block;
+	text-decoration:none;
+	text-transform:uppercase;
+	margin:25px;
+}
+nav{
+	display:flex;
+	justify-content:center;
+	background:#00FF00;
+}
+
+@media(max-width:425px){
+		.menuhamburguer{
+		display:block;
+
+	}
+	li{
+		display:none;
+	}
+}
+
+@media(max-width: 768px){
+		.divfla {
+		flex-wrap:wrap;
+}
+ .p__image{
+ 	font-size:18px;
+ }
+	.img{
+	width:180px;
+	height:140px;
 }
